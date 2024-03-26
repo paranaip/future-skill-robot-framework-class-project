@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-26T16:09:30.913405" rpa="false" schemaversion="5">
+<suite id="s1" name="RegisterTestCase" source="C:\Users\paran\qa-lessons\futureskill-course\aqa-01\robotframework-class-project\testcases\RegisterTestCase.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-03-26T16:09:31.217929" level="INFO">Opening browser 'chrome' to base url 'https://futureskill.co/'.</msg>
+<arg>${baseurl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-26T16:09:31.216926" elapsed="2.488962"/>
+</kw>
+<test id="s1-t1" name="Test case to register member on web Future skill" line="13">
+<kw name="Click register button" owner="HomePageKeywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-26T16:09:34.714296" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-26T16:09:33.713904" elapsed="1.000899"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-26T16:09:34.715814" level="INFO">Clicking element 'xpath://button[contains(text(),'สมัครสมาชิก')]'.</msg>
+<arg>xpath://button[contains(text(),'สมัครสมาชิก')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T16:09:34.714803" elapsed="2.265685"/>
+</kw>
+<status status="PASS" start="2024-03-26T16:09:33.713904" elapsed="3.266584"/>
+</kw>
+<kw name="Fill Email" owner="RegisterKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-26T16:09:36.982489" level="INFO">Typing text 'snowme@gmail.com' into text field 'xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[1]/div/div[1]/input'.</msg>
+<arg>xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[1]/div/div[1]/input</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T16:09:36.982489" elapsed="0.545687"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2024-03-26T16:09:36.981488" elapsed="0.546688"/>
+</kw>
+<kw name="Fill Name" owner="RegisterKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-26T16:09:37.530171" level="INFO">Typing text 'John' into text field 'xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[2]/div[1]/div/div[1]/input'.</msg>
+<arg>xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[2]/div[1]/div/div[1]/input</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T16:09:37.529172" elapsed="0.245941"/>
+</kw>
+<arg>${name}</arg>
+<status status="PASS" start="2024-03-26T16:09:37.529172" elapsed="0.245941"/>
+</kw>
+<kw name="Fill Lastname" owner="RegisterKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-26T16:09:37.777142" level="INFO">Typing text 'Snow' into text field 'xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[2]/div[2]/div/div[1]/input'.</msg>
+<arg>xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[2]/div[2]/div/div[1]/input</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T16:09:37.777142" elapsed="0.213585"/>
+</kw>
+<arg>${lastname}</arg>
+<status status="PASS" start="2024-03-26T16:09:37.776136" elapsed="0.214591"/>
+</kw>
+<kw name="Fill Phone Number" owner="RegisterKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-26T16:09:37.992738" level="INFO">Typing text '0987654321' into text field 'xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[3]/div/div[1]/input'.</msg>
+<arg>xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[3]/div/div[1]/input</arg>
+<arg>${phone_number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T16:09:37.991724" elapsed="0.221403"/>
+</kw>
+<arg>${phone_number}</arg>
+<status status="PASS" start="2024-03-26T16:09:37.991724" elapsed="0.221403"/>
+</kw>
+<kw name="Fill Password and Fill Confirm Password" owner="RegisterKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-26T16:09:38.215173" level="INFO">Typing text 'Snow1234$' into text field 'xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[4]/div/div[1]/input'.</msg>
+<arg>xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[4]/div/div[1]/input</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T16:09:38.215173" elapsed="0.195307"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-26T16:09:38.411600" level="INFO">Typing text 'Snow1234$' into text field 'xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[5]/div/div[1]/input'.</msg>
+<arg>xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[5]/div/div[1]/input</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T16:09:38.410480" elapsed="0.135989"/>
+</kw>
+<arg>${password}</arg>
+<arg>${confirm_password}</arg>
+<status status="PASS" start="2024-03-26T16:09:38.214159" elapsed="0.332310"/>
+</kw>
+<kw name="Click Accept Term And Condition" owner="RegisterKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-26T16:09:38.547476" level="INFO">Clicking element 'xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[6]/label/input'.</msg>
+<arg>xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[6]/label/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T16:09:38.547476" elapsed="0.058988"/>
+</kw>
+<status status="PASS" start="2024-03-26T16:09:38.547476" elapsed="0.058988"/>
+</kw>
+<kw name="Click Register Button" owner="RegisterKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-26T16:09:38.608480" level="INFO">Clicking element 'xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[7]/button'.</msg>
+<arg>xpath://*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[7]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T16:09:38.608480" elapsed="0.078220"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-26T16:09:42.688314" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-26T16:09:38.687696" elapsed="4.000618"/>
+</kw>
+<status status="PASS" start="2024-03-26T16:09:38.607487" elapsed="4.080827"/>
+</kw>
+<kw name="Assert Page Should Contain Text" owner="RegisterOTPKeywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-26T16:09:42.720204" level="INFO">Current page contains text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-26T16:09:42.690332" elapsed="0.029872"/>
+</kw>
+<arg>ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์</arg>
+<status status="PASS" start="2024-03-26T16:09:42.689335" elapsed="0.030869"/>
+</kw>
+<doc>Test case to register member on web Future skill</doc>
+<status status="PASS" start="2024-03-26T16:09:33.705888" elapsed="9.016371"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-26T16:09:42.725290" elapsed="2.261330"/>
+</kw>
+<status status="PASS" start="2024-03-26T16:09:30.915310" elapsed="14.071310"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RegisterTestCase">RegisterTestCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
